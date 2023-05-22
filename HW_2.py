@@ -3,10 +3,11 @@
 # 123 -> 6 (1 + 2 + 3)
 # 100 -> 1 (1 + 0 + 0)
 
-n =int(input('Введите трезначное число:'))
+n =input('Введите трезначное число:')
 sum_digits=0
 
-if  1000 > n > 99:
+if len(n) == 3 and n.isdigit():
+    n = int(n)
     while n >0:
         digit=n%10
         sum_digits+=digit
