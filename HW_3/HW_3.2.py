@@ -8,16 +8,12 @@
 #     Input: [10, 5, 7, 3, 3, 2, 5, 7, 3, 8], X = 9
 
 list1=[10, 5, 7, 3, 3, 2, 5, 7, 3, 8]
-
-x = int(input('Ведите число:'))
-
-if x in list1:
-    print(x)
-elif (x-1) in list1:print(x-1)
-elif (x-2) in list1:print(x-2)
-elif (x+1) in list1:print(x+1)
-elif (x+2) in list1:print(x+2)
-
+x =int(input('Ведите число:'))
+diff = abs(list1[0]-x)
+for i in list1:
+    if diff > abs(i - x):
+        diff = abs(i - x)
+print(diff)
         
     
 

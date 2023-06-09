@@ -42,5 +42,6 @@ for i in word:
     for k,v in list_alphabet.items():
         if i in v:
             sum+=k
+            break    
 print(f'Стоимость слова: {sum}')            
 
